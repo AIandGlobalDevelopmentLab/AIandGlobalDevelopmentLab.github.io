@@ -1,0 +1,38 @@
+# Open source tools and datasets
+
+software:
+  - name: causalimages
+    description: R package for causal inference with Earth Observation and imagery data. Implements image-based treatment effect heterogeneity methods.
+    github: https://github.com/cjerzak/causalimages-software
+    docs: https://github.com/cjerzak/causalimages-software#readme
+    language: R
+
+  - name: LinkOrgs
+    description: Software for linking budget organizations across countries and years. Enables cross-national comparisons of government structures.
+    github: https://github.com/cjerzak/LinkOrgs-software
+    docs: https://github.com/cjerzak/LinkOrgs-software#readme
+    language: R
+
+  - name: ContractorSight
+    description: Package for estimating government contractor performance using administrative data.
+    github: https://github.com/cjerzak/contractorsight-software
+    docs: https://github.com/cjerzak/contractorsight-software#readme
+    language: R
+
+datasets:
+  - name: Global Poverty Maps (2000-2024)
+    description: High-resolution poverty estimates derived from satellite imagery and survey data, covering multiple regions and time periods.
+    access: Available upon request for academic research
+
+  - name: Building Damage Assessment Dataset
+    description: Labeled satellite imagery dataset for training automated building damage detection models.
+    access: Available on request
+
+  - name: Night Lights Economic Activity Index
+    description: Processed night lights data with economic activity proxies for fragile states.
+    access: Open access
+
+citation_guidelines: |
+  When using our software or data, please cite the relevant publication(s).
+  For software packages, please also cite the software directly using the
+  citation information provided in the repository.

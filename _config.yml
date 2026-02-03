@@ -1,0 +1,41 @@
+# Site settings
+title: AI & Global Development Lab
+description: >-
+  Fusing AI with Earth Observation to measure what changes lives—and why.
+  Mapping poverty, conflict, and sustainability from 1984 to today.
+url: "https://aiandglobaldevelopmentlab.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Sass settings
+sass:
+  style: compressed
+  sass_dir: _sass
+
+# Collections
+collections_dir: .
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - .gitignore
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Plugins (GitHub Pages supported)
+plugins:
+  - jekyll-seo-tag

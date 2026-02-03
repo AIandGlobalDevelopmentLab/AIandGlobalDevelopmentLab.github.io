@@ -1,0 +1,84 @@
+// ===========================================
+// Base Styles - Reset & Defaults
+// ===========================================
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-stack;
+  font-size: $font-size-body;
+  line-height: $line-height-relaxed;
+  color: $color-black;
+  background-color: $color-white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: $color-accent;
+  text-decoration: none;
+  transition: color $transition-fast;
+
+  &:hover {
+    color: $color-accent-hover;
+  }
+}
+
+ul, ol {
+  list-style-position: inside;
+}
+
+// Selection
+::selection {
+  background-color: rgba($color-accent, 0.2);
+}
+
+// Focus styles for accessibility
+:focus-visible {
+  outline: 2px solid $color-accent;
+  outline-offset: 2px;
+}
+
+// Smooth scrolling for anchor links
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+// Reduced motion
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

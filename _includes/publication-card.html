@@ -1,0 +1,28 @@
+<div class="publication" data-year="{{ include.pub.year }}" data-theme="{{ include.pub.theme }}">
+  <h3 class="publication-title">
+    {% if include.pub.url %}
+      <a href="{{ include.pub.url }}" target="_blank" rel="noopener">{{ include.pub.title }}</a>
+    {% else %}
+      {{ include.pub.title }}
+    {% endif %}
+  </h3>
+  <p class="publication-authors">{{ include.pub.authors }}</p>
+  <p class="publication-venue">{{ include.pub.venue }}</p>
+
+  {% if include.pub.pdf or include.pub.doi or include.pub.code or include.pub.data %}
+  <div class="publication-links">
+    {% if include.pub.pdf %}
+      <a href="{{ include.pub.pdf }}" target="_blank" rel="noopener">PDF</a>
+    {% endif %}
+    {% if include.pub.doi %}
+      <a href="{{ include.pub.doi }}" target="_blank" rel="noopener">DOI</a>
+    {% endif %}
+    {% if include.pub.code %}
+      <a href="{{ include.pub.code }}" target="_blank" rel="noopener">Code</a>
+    {% endif %}
+    {% if include.pub.data %}
+      <a href="{{ include.pub.data }}" target="_blank" rel="noopener">Data</a>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>

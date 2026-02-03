@@ -1,0 +1,53 @@
+directors:
+  - name: Connor T. Jerzak
+    role: Assistant Professor, Department of Government
+    institution: UT Austin
+    bio: Research focuses on causal inference methodology, AI applications to global development challenges, and text-based AI systems.
+    photo: /assets/images/team/jerzak.webp
+    education:
+      - PhD Government, Harvard University (2021)
+      - AM Statistics, Harvard University (2020)
+    website: https://connorjerzak.com
+    github: cjerzak
+    scholar: https://scholar.google.com/citations?user=XXXXXXX
+
+  - name: Adel Daoud
+    role: Associate Professor, Institute for Analytical Sociology
+    institution: Linköping University / Chalmers University
+    bio: Research focuses on AI/ML applications for poverty analysis, satellite imagery interpretation, and causal inference methods.
+    photo: /assets/images/team/daoud.webp
+    awards:
+      - Young Academy of Sweden member (2022-2027)
+      - Hans L. Zetterberg Prize in Sociology (2022)
+    website: https://www.adeldaoud.com
+    github: adeldaoud
+    scholar: https://scholar.google.com/citations?user=XXXXXXX
+
+  - name: Xiao-Li Meng
+    role: Whipple V. N. Jones Professor of Statistics
+    institution: Harvard University
+    bio: Founding Editor-in-Chief of Harvard Data Science Review. Former Dean of Harvard Graduate School of Arts and Sciences (2012-2017).
+    photo: /assets/images/team/meng.webp
+    awards:
+      - COPSS Presidents' Award (2001)
+    website: https://statistics.fas.harvard.edu/people/xiao-li-meng
+    scholar: https://scholar.google.com/citations?user=XXXXXXX
+
+researchers:
+  # Add researchers here as they join
+  # - name: Name
+  #   role: Position
+  #   institution: Institution
+  #   photo: /assets/images/team/lastname.webp
+
+students:
+  # Add students here
+  # - name: Name
+  #   role: PhD Student
+  #   institution: Institution
+
+alumni:
+  # Add alumni here
+  # - name: Name
+  #   role: Former Position
+  #   current: Current Position

@@ -1,0 +1,14 @@
+main:
+  - title: Research
+    url: /research/
+  - title: Team
+    url: /team/
+  - title: About
+    url: /about/
+  - title: Data & Code
+    url: /data-code/
+  - title: Work With Us
+    url: /work-with-us/
+  - title: Causal Inference
+    url: https://planetarycausalinference.org
+    external: true
