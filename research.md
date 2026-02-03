@@ -14,13 +14,13 @@ description: Publications from the AI & Global Development Lab spanning poverty 
 <section class="section-sm">
   <div class="container">
     <div class="filter-bar" id="theme-filters">
-      <button class="tag tag-active" data-filter="all">All</button>
-      <button class="tag" data-filter="poverty">Poverty</button>
-      <button class="tag" data-filter="conflict">Conflict</button>
-      <button class="tag" data-filter="sustainability">Sustainability</button>
-      <button class="tag" data-filter="methods">Methods</button>
-      <button class="tag" data-filter="software">Software</button>
-      <button class="tag" data-filter="text">Text Analysis</button>
+      <button class="tag tag-active" type="button" data-filter="all">All</button>
+      <button class="tag" type="button" data-filter="poverty">Poverty</button>
+      <button class="tag" type="button" data-filter="conflict">Conflict</button>
+      <button class="tag" type="button" data-filter="sustainability">Sustainability</button>
+      <button class="tag" type="button" data-filter="methods">Methods</button>
+      <button class="tag" type="button" data-filter="software">Software</button>
+      <button class="tag" type="button" data-filter="text">Text Analysis</button>
     </div>
   </div>
 </section>

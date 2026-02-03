@@ -73,7 +73,6 @@
     headers.forEach(function(header) {
       header.addEventListener('click', function() {
         const content = this.nextElementSibling;
-        const isActive = this.classList.contains('active');
 
         // Close all other accordions in the same group
         const parent = this.closest('.accordion');
@@ -81,6 +80,7 @@
           parent.querySelectorAll('.accordion-header.active').forEach(function(h) {
             if (h !== header) {
               h.classList.remove('active');
+              h.setAttribute('aria-expanded', 'false');
               h.nextElementSibling.classList.remove('active');
             }
           });
@@ -89,6 +89,7 @@
         // Toggle current
         this.classList.toggle('active');
         content.classList.toggle('active');
+        this.setAttribute('aria-expanded', this.classList.contains('active') ? 'true' : 'false');
       });
     });
   }

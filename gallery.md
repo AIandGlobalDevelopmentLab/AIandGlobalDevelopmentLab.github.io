@@ -15,44 +15,32 @@ description: Visual showcase of research outputs from the AI & Global Developmen
   <div class="container">
     <div class="gallery-grid">
       <div class="gallery-item">
-        <div style="background-color: #e8e8ed; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #86868b; font-size: 14px; text-align: center; padding: 20px;">
-          Poverty Map<br>Africa
-        </div>
+        <div class="media-placeholder">Poverty Map<br>Africa</div>
         <div class="gallery-caption">High-resolution poverty estimates for sub-Saharan Africa</div>
       </div>
 
       <div class="gallery-item">
-        <div style="background-color: #e8e8ed; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #86868b; font-size: 14px; text-align: center; padding: 20px;">
-          Satellite<br>Imagery
-        </div>
+        <div class="media-placeholder">Satellite<br>Imagery</div>
         <div class="gallery-caption">Satellite imagery used for building damage assessment</div>
       </div>
 
       <div class="gallery-item">
-        <div style="background-color: #e8e8ed; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #86868b; font-size: 14px; text-align: center; padding: 20px;">
-          Causal<br>Inference
-        </div>
+        <div class="media-placeholder">Causal<br>Inference</div>
         <div class="gallery-caption">Causal inference framework visualization</div>
       </div>
 
       <div class="gallery-item">
-        <div style="background-color: #e8e8ed; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #86868b; font-size: 14px; text-align: center; padding: 20px;">
-          Night<br>Lights
-        </div>
+        <div class="media-placeholder">Night<br>Lights</div>
         <div class="gallery-caption">Night lights data showing economic activity patterns</div>
       </div>
 
       <div class="gallery-item">
-        <div style="background-color: #e8e8ed; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #86868b; font-size: 14px; text-align: center; padding: 20px;">
-          Building<br>Detection
-        </div>
+        <div class="media-placeholder">Building<br>Detection</div>
         <div class="gallery-caption">Automated building detection and damage classification</div>
       </div>
 
       <div class="gallery-item">
-        <div style="background-color: #e8e8ed; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #86868b; font-size: 14px; text-align: center; padding: 20px;">
-          Time<br>Series
-        </div>
+        <div class="media-placeholder">Time<br>Series</div>
         <div class="gallery-caption">Temporal analysis of environmental change</div>
       </div>
     </div>
@@ -68,6 +56,6 @@ description: Visual showcase of research outputs from the AI & Global Developmen
 
 <!-- Lightbox -->
 <div class="lightbox" id="lightbox">
-  <button class="lightbox-close" aria-label="Close">&times;</button>
+  <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
   <img src="" alt="">
 </div>

@@ -17,11 +17,11 @@ description: Meet the researchers behind the AI & Global Development Lab.
     <div class="grid grid-3">
       {% for director in site.data.team.directors %}
       <div class="card team-card team-card-large">
-        <div class="team-photo" style="background-color: #e8e8ed; display: flex; align-items: center; justify-content: center; color: #86868b; font-size: 14px;">Photo</div>
+        <div class="team-photo team-photo-placeholder" aria-hidden="true">Photo</div>
         <h3 class="team-name">{{ director.name }}</h3>
         <p class="team-role">{{ director.role }}<br>{{ director.institution }}</p>
-        <p class="card-description" style="margin-top: 12px; font-size: 14px;">{{ director.bio }}</p>
-        <div class="team-links" style="margin-top: 16px;">
+        <p class="card-description team-bio mt-2">{{ director.bio }}</p>
+        <div class="team-links mt-3">
           {% if director.website %}
             <a href="{{ director.website }}" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">Website</a>
           {% endif %}
@@ -42,7 +42,7 @@ description: Meet the researchers behind the AI & Global Development Lab.
     <div class="grid grid-4">
       {% for person in site.data.team.researchers %}
       <div class="card team-card">
-        <div class="team-photo" style="background-color: #e8e8ed; display: flex; align-items: center; justify-content: center; color: #86868b; font-size: 12px;">Photo</div>
+        <div class="team-photo team-photo-placeholder" aria-hidden="true">Photo</div>
         <h3 class="team-name">{{ person.name }}</h3>
         <p class="team-role">{{ person.role }}<br>{{ person.institution }}</p>
       </div>
@@ -59,7 +59,7 @@ description: Meet the researchers behind the AI & Global Development Lab.
     <div class="grid grid-4">
       {% for person in site.data.team.students %}
       <div class="card team-card">
-        <div class="team-photo" style="background-color: #e8e8ed; display: flex; align-items: center; justify-content: center; color: #86868b; font-size: 12px;">Photo</div>
+        <div class="team-photo team-photo-placeholder" aria-hidden="true">Photo</div>
         <h3 class="team-name">{{ person.name }}</h3>
         <p class="team-role">{{ person.role }}<br>{{ person.institution }}</p>
       </div>

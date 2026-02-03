@@ -15,6 +15,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  scroll-padding-top: 88px;
 }
 
 body {
@@ -23,6 +24,12 @@ body {
   line-height: $line-height-relaxed;
   color: $color-black;
   background-color: $color-white;
+  background-image:
+    radial-gradient(1000px 520px at 18% -10%, rgba($color-accent-2, 0.18) 0%, rgba($color-white, 0) 60%),
+    radial-gradient(1100px 560px at 85% -18%, rgba($color-accent, 0.18) 0%, rgba($color-white, 0) 58%),
+    radial-gradient(900px 520px at 55% 0%, rgba($color-accent, 0.06) 0%, rgba($color-white, 0) 72%);
+  background-repeat: no-repeat;
+  text-rendering: optimizeLegibility;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -80,5 +87,23 @@ html:focus-within {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+// Skip link (accessibility)
+.skip-link {
+  position: absolute;
+  left: $space-2;
+  top: $space-2;
+  padding: 10px 14px;
+  background-color: $color-black;
+  color: $color-white;
+  border-radius: $radius-md;
+  transform: translateY(-160%);
+  transition: transform $transition-fast;
+  z-index: 1000;
+
+  &:focus {
+    transform: translateY(0);
   }
 }

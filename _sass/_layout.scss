@@ -131,12 +131,41 @@
 
 // Page header
 .page-header {
+  position: relative;
+  overflow: hidden;
   padding: $space-10 0 $space-8;
   text-align: center;
 
   @media (max-width: $breakpoint-md) {
     padding: $space-6 0 $space-4;
   }
+}
+
+.page-header::before {
+  content: "";
+  position: absolute;
+  inset: -220px -220px auto;
+  height: 420px;
+  background:
+    radial-gradient(600px 280px at 50% 35%, rgba($color-accent, 0.16) 0%, rgba($color-white, 0) 60%),
+    radial-gradient(680px 300px at 20% 40%, rgba($color-accent-2, 0.14) 0%, rgba($color-white, 0) 62%);
+  pointer-events: none;
+}
+
+.page-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba($color-black, 0),
+    rgba($color-black, 0.10),
+    rgba($color-black, 0)
+  );
+  pointer-events: none;
 }
 
 .page-header-left {
@@ -147,7 +176,7 @@
   max-width: 700px;
   margin: $space-3 auto 0;
   color: $color-gray-600;
-  font-size: 18px;
+  font-size: clamp(16px, 1.7vw, 18px);
 
   .page-header-left & {
     margin-left: 0;
@@ -157,6 +186,6 @@
 // Divider
 .divider {
   height: 1px;
-  background-color: $color-gray-200;
+  background-color: rgba($color-black, 0.10);
   margin: $space-6 0;
 }

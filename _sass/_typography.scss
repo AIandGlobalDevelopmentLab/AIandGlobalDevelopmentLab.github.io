@@ -9,29 +9,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: $font-size-h1;
-  letter-spacing: -0.02em;
-
-  @media (max-width: $breakpoint-md) {
-    font-size: 36px;
-  }
+  font-size: clamp(34px, 4vw, $font-size-h1);
+  letter-spacing: -0.03em;
 }
 
 h2 {
-  font-size: $font-size-h2;
-  letter-spacing: -0.01em;
-
-  @media (max-width: $breakpoint-md) {
-    font-size: 28px;
-  }
+  font-size: clamp(26px, 3vw, $font-size-h2);
+  letter-spacing: -0.02em;
 }
 
 h3 {
-  font-size: $font-size-h3;
-
-  @media (max-width: $breakpoint-md) {
-    font-size: 20px;
-  }
+  font-size: clamp(20px, 2.2vw, $font-size-h3);
 }
 
 h4 {
@@ -47,12 +35,8 @@ p {
 }
 
 .text-large {
-  font-size: 21px;
+  font-size: clamp(18px, 2vw, 22px);
   line-height: $line-height-relaxed;
-
-  @media (max-width: $breakpoint-md) {
-    font-size: 18px;
-  }
 }
 
 .text-small {
@@ -73,33 +57,17 @@ p {
 
 // Hero text
 .hero-title {
-  font-size: $font-size-hero;
+  font-size: clamp(34px, 5vw, 64px);
   font-weight: $font-weight-bold;
   line-height: $line-height-tight;
   letter-spacing: -0.03em;
-
-  @media (max-width: $breakpoint-lg) {
-    font-size: 44px;
-  }
-
-  @media (max-width: $breakpoint-md) {
-    font-size: 36px;
-  }
-
-  @media (max-width: $breakpoint-sm) {
-    font-size: 28px;
-  }
 }
 
 .hero-subtitle {
-  font-size: 21px;
+  font-size: clamp(18px, 2vw, 21px);
   line-height: $line-height-relaxed;
   color: $color-gray-600;
   font-weight: $font-weight-normal;
-
-  @media (max-width: $breakpoint-md) {
-    font-size: 18px;
-  }
 }
 
 // Section titles
