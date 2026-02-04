@@ -85,6 +85,17 @@ p {
   }
 }
 
+.section-title-link,
+.section-title-link:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section-title-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 // Links
 .link-arrow {
   display: inline-flex;

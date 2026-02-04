@@ -133,7 +133,9 @@ title: Home
 
 <section class="section">
   <div class="container">
-    <h2 class="section-title text-center animate-on-scroll">More on aidevlab.org</h2>
+    <h2 class="section-title text-center animate-on-scroll">
+      <a class="section-title-link" href="{{ site.main_site.url }}" target="_blank" rel="noopener">More on aidevlab.org</a>
+    </h2>
     <p class="text-center text-muted animate-on-scroll">Our main lab hub hosts datasets, rankings, visualizations, and more.</p>
 
     <div class="grid grid-3 mt-6 animate-stagger">
