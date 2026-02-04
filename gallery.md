@@ -62,6 +62,7 @@ description: Visual showcase of research outputs from the AI & Global Developmen
   </div>
 </section>
 
+<!---
 <section class="section section-gray">
   <div class="container">
     <h2 class="section-title text-center animate-on-scroll">Before &amp; After Comparisons</h2>
@@ -110,6 +111,7 @@ description: Visual showcase of research outputs from the AI & Global Developmen
     </div>
   </div>
 </section>
+--->
 
 <section class="section">
   <div class="container container-narrow text-center">
