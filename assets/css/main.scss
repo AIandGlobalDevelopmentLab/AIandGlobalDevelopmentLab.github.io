@@ -93,6 +93,8 @@
   list-style: none;
 
   a {
+    display: inline-block;
+    text-align: left;
     color: $color-gray-600;
     font-size: $font-size-small;
     font-weight: $font-weight-medium;
