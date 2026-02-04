@@ -1,0 +1,45 @@
+{% comment %}
+  Before/After Image Comparison Slider
+
+  Usage:
+  {% include image-compare.html
+    before_image="/assets/images/gallery/before-example.jpg"
+    before_alt="Before image description"
+    before_label="Before"
+    after_image="/assets/images/gallery/after-example.jpg"
+    after_alt="After image description"
+    after_label="After"
+    placeholder_text="Urban expansion comparison"
+  %}
+{% endcomment %}
+
+<div class="image-compare" role="img" aria-label="Image comparison slider: {{ include.before_label | default: 'Before' }} vs {{ include.after_label | default: 'After' }}">
+  {% if include.before_image and include.after_image %}
+    <div class="image-compare__before">
+      <img src="{{ include.before_image | relative_url }}" alt="{{ include.before_alt | default: 'Before image' }}" loading="lazy">
+    </div>
+    <div class="image-compare__after">
+      <img src="{{ include.after_image | relative_url }}" alt="{{ include.after_alt | default: 'After image' }}" loading="lazy">
+    </div>
+  {% else %}
+    <div class="image-compare__before">
+      <div class="image-compare__placeholder">
+        {{ include.placeholder_text | default: 'Before image placeholder' }}<br>
+        <small>(Before)</small>
+      </div>
+    </div>
+    <div class="image-compare__after">
+      <div class="image-compare__placeholder">
+        {{ include.placeholder_text | default: 'After image placeholder' }}<br>
+        <small>(After)</small>
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="image-compare__slider" role="slider" aria-label="Comparison slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0"></div>
+
+  <div class="image-compare__labels">
+    <span class="image-compare__label">{{ include.before_label | default: 'Before' }}</span>
+    <span class="image-compare__label">{{ include.after_label | default: 'After' }}</span>
+  </div>
+</div>
