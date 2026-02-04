@@ -1,6 +1,14 @@
 - id: one-map-many-trials
   title: A One Map, Many Trials Paradigm
   href: https://arxiv.org/abs/2508.01341
+  caption: >-
+    Machine‑learning models trained on satellite imagery can predict household
+    wealth with R² values approaching 0.80, but these predictions shrink toward
+    the mean and attenuate estimated causal effects—e.g., a true 5% impact may
+    appear as only 2–3%. The associated paper introduces two post‑hoc corrections
+    (Linear Calibration and Tweedie’s) that debias predictions without needing
+    fresh ground‑truth data, enabling a “one map, many trials” paradigm for reuse
+    across multiple causal evaluations.
   panels:
     - label: Figure
       alt: A One Map, Many Trials Paradigm
@@ -10,6 +18,17 @@
 - id: cv-wb
   title: Chinese vs World Bank Development Projects
   href: https://arxiv.org/abs/2509.25648
+  caption: >-
+    A continent‑scale evaluation compares Chinese and World Bank projects across
+    9,899 neighbourhoods in 36 African countries between 2002–2013, covering
+    about 88% of the population. Using machine‑learned wealth indices from
+    6.7 km² satellite mosaics and inverse‑probability weighting, the study finds
+    that both donors raise wealth but China’s projects deliver larger and more
+    consistent gains; sector‑level extremes include World Bank trade & tourism
+    projects adding +12.29 IWI points and China emergency‑response projects
+    adding +15.15 IWI points. World Bank project placement is more predictable
+    from imagery, suggesting Chinese placements depend more on unobserved
+    factors.
   panels:
     - label: Panel 1
       alt: Chinese vs World Bank Development Projects visual abstract panel 1
@@ -39,6 +58,17 @@
 - id: multiscale
   title: Multiscale satellite representation
   href: https://arxiv.org/abs/2411.02134
+  caption: >-
+    The paper introduces Multi‑Scale Representation Concatenation, which turns
+    any single‑scale earth‑observation CATE estimator into a multi‑scale version
+    by concatenating image representations and feeding them into a causal forest.
+    Simulation studies and applications to Peru and Uganda anti‑poverty RCTs show
+    that multi‑scale models capture effect heterogeneity that single‑scale models
+    miss and improve the Rank Average Treatment Effect Ratio (RATE). For Uganda,
+    multi‑scale models increase the RATE‑ratio by 0.95 (s.e. 0.10) compared with
+    0.41 for raw single‑scale models; in Peru the gains are 0.68 vs 0.00, with
+    optimal heterogeneity detection achieved by combining small (~64‑pixel) and
+    large (~350‑pixel) image contexts.
   panels:
     - label: Figure 1
       alt: Multiscale satellite representation
@@ -60,6 +90,17 @@
 - id: image-seq-heterogeneity
   title: Image sequence heterogeneity
   href: https://arxiv.org/abs/2407.11674
+  caption: >-
+    Many social and environmental phenomena change over time, yet image
+    sequences are under‑utilised in causal inference. This paper compares models
+    for estimating Conditional Average Treatment Effects (CATEs) from sequences
+    of satellite images and finds that richer image‑sequence models (with more
+    parameters) better detect treatment effect heterogeneity. Applied to two
+    RCTs—a poverty intervention in Cusco, Peru and a water‑conservation
+    experiment in Georgia, USA—the methods show how model choice, data source
+    (images vs tabular), and evaluation metric affect detected heterogeneity, and
+    demonstrate how satellite sequences can generalise RCT results to larger
+    geographic areas.
   panels:
     - label: Figure 1
       alt: Research visualization 1
@@ -81,6 +122,16 @@
 - id: eoc
   title: Earth Observation Confounding (EOC)
   href: https://arxiv.org/pdf/2301.12985.pdf
+  caption: >-
+    This study formalises how patterns in satellite images can confound causal
+    estimates and develops methods to adjust for such image‑based confounders.
+    In a Nigeria case study, where about 40% of the population lives on less than
+    $2/day despite 3% annual growth, the authors combine DHS wealth data
+    (International Wealth Index), AidData aid locations and 14.25 m‑resolution
+    Landsat imagery. They define treatment as an aid program within 7 km of a
+    survey cluster and show via simulations and neural‑network experiments how
+    image resolution and model specification influence bias and the need for
+    confounder adjustment.
   panels:
     - label: Figure 1
       alt: Comparison table of tabular, text, network, and earth observation data streams
@@ -98,6 +149,17 @@
 - id: eo-causal-inference
   title: Earth observation + causal inference
   href: https://arxiv.org/pdf/2406.02584
+  caption: >-
+    A comprehensive scoping review catalogues Earth‑observation–machine‑learning
+    (EO‑ML) methods used for causal inference and identifies five workflows:
+    (1) outcome imputation, (2) image deconfounding, (3) treatment effect
+    heterogeneity, (4) transportability analysis and (5) image‑informed causal
+    discovery. Development assistance reached $223.7 billion in 2023 and the
+    global extreme‑poverty rate fell to 8.4% in 2019, yet up to 575 million
+    people may still live in extreme poverty by 2030; the review argues that
+    EO‑ML techniques can help address these persistent challenges and provides
+    protocols for data requirements, model selection and evaluation when
+    integrating EO data into causal analyses.
   panels:
     - label: Composite
       alt: Composite illustration of integrating earth observation into causal inference
@@ -111,6 +173,17 @@
 - id: image-based-treatment-heterogeneity
   title: Image-based treatment heterogeneity
   href: https://proceedings.mlr.press/v213/jerzak23a/jerzak23a.pdf
+  caption: >-
+    This work develops a deep probabilistic model that clusters satellite images
+    by their treatment‑effect distributions, enabling estimation of CATEs
+    directly from images. Simulation results show the model better recovers true
+    effect clusters than TARNet‑based clustering under high noise. Applied to a
+    Ugandan anti‑poverty RCT using Landsat imagery, the model distinguishes
+    high‑response areas (e.g., accessible terrain with good transportation) from
+    low‑response regions (harsh, mountainous areas) and provides posterior
+    predictive maps of cluster probabilities across Uganda; the correlation
+    between raw and orthogonalized cluster probabilities is 0.85, indicating
+    robust image‑derived heterogeneity estimates.
   panels:
     - label: Figure 1
       alt: Research visualization 1

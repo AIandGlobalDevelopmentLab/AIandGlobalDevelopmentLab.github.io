@@ -59,8 +59,9 @@ title: Home
             </div>
           </header>
 
-          {% if lead_panel and lead_panel.alt %}
-            <p class="case-study__caption">{{ lead_panel.alt | truncate: 160 }}</p>
+          {% assign caption = battery.caption | default: lead_panel.alt %}
+          {% if caption %}
+            <p class="case-study__caption">{{ caption | strip_newlines }}</p>
           {% endif %}
 
           <div class="case-study__grid" aria-label="Case study panels: {{ battery.title }}">
