@@ -9,7 +9,7 @@ narrow: true
 
 For general questions about our research, collaboration opportunities, or media inquiries:
 
-**Email:** [aidevlab@example.edu](mailto:aidevlab@example.edu)
+**Email:** [info@aidevlab.org](mailto:info@aidevlab.org)
 
 ---
 

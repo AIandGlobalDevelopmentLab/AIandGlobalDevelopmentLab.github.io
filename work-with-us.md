@@ -69,9 +69,9 @@ We're particularly interested in collaborations that:
 
 ## Contact
 
-Interested? Email us at [aidevlab@example.edu](mailto:aidevlab@example.edu) with:
+Interested? Email us at [info@aidevlab.org](mailto:info@aidevlab.org) with:
 - Your CV
 - A brief statement of your research interests
 - Why you want to work with us
 
-We try to respond within two weeks.
+We try to respond within one business day.
