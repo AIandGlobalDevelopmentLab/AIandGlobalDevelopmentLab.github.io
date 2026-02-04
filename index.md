@@ -115,7 +115,10 @@ title: Home
   <div class="container">
     <h2 class="section-title animate-on-scroll">Recent Publications</h2>
     <div class="featured-publications animate-stagger">
-      {% assign recent_pubs = site.data.publications[2025] | concat: site.data.publications[2024] | slice: 0, 4 %}
+      {% assign featured_2026 = site.data.publications[2026] | where: "featured", true %}
+      {% assign featured_2025 = site.data.publications[2025] | where: "featured", true %}
+      {% assign featured_2024 = site.data.publications[2024] | where: "featured", true %}
+      {% assign recent_pubs = featured_2026 | concat: featured_2025 | concat: featured_2024 | slice: 0, 4 %}
       {% for pub in recent_pubs %}
         <div class="animate-on-scroll">
           {% include publication-card.html pub=pub %}

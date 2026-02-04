@@ -2,168 +2,120 @@
 # Each publication: title, authors, venue, year, theme, url, pdf, doi, code, data
 
 2026:
-  - title: "Integrating Earth Observation Data into Causal Inference: Challenges and Opportunities"
-    authors: "Jerzak, C.T., Daoud, A., Meng, X.L."
-    venue: "Nature Reviews Earth & Environment (forthcoming)"
+  - title: "Debiasing Machine Learning Predictions for Causal Inference Without Additional Ground Truth Data: One Map, Many Trials in Satellite-Driven Poverty Analysis"
+    authors: "Markus Pettersson; Connor T. Jerzak; Adel Daoud"
+    venue: "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI-26), Special Track on AI for Social Impact"
     year: 2026
     theme: methods
+    featured: true
+
+  - title: "FastRerandomize: Fast rerandomization using accelerated computing"
+    authors: "Rebecca Goldstein; Connor T. Jerzak; Aniket Kamat; Fucheng Warren Zhu"
+    venue: "SoftwareX, 33, 102508"
+    year: 2026
+    theme: software
+    url: https://www.sciencedirect.com/science/article/pii/S2352711026000026
+    doi: https://doi.org/10.1016/j.softx.2026.102508
 
 2025:
-  - title: "Image-based Treatment Effect Heterogeneity"
-    authors: "Jerzak, C.T., Johansson, F., Daoud, A."
-    venue: "Proceedings of the National Academy of Sciences"
+  - title: "Optimizing Multi-Scale Representations to Detect Effect Heterogeneity Using Earth Observation and Computer Vision: Applications to Two Anti-Poverty RCTs"
+    authors: "Fucheng Warren Zhu; Connor T. Jerzak; Adel Daoud"
+    venue: "Proceedings of the Fourth Conference on Causal Learning and Reasoning (CLeaR), PMLR 275, pp. 894–919"
     year: 2025
     theme: methods
-    code: https://github.com/cjerzak/causalimages-software
+    url: https://proceedings.mlr.press/v275/zhu25a.html
+    featured: true
 
-  - title: "causalimages: An R Package for Causal Inference with Earth Observation, Bio-medical, and Social Science Imagery"
-    authors: "Jerzak, C.T., Johansson, F., Daoud, A."
-    venue: "Journal of Statistical Software"
-    year: 2025
-    theme: software
-    code: https://github.com/cjerzak/causalimages-software
-
-  - title: "Poverty Prediction Using Geospatial Features: A Comparison of Deep Learning and Traditional Approaches"
-    authors: "Daoud, A., Jerzak, C.T."
-    venue: "International Journal of Data Science and Analytics"
+  - title: "Platonic Representations for Poverty Mapping: Unified Vision-Language Codes or Agent-Induced Novelty?"
+    authors: "Satiyabooshan Murugaboopathy; Connor T. Jerzak; Adel Daoud"
+    venue: "arXiv Preprint"
     year: 2025
     theme: poverty
+    url: https://arxiv.org/abs/2508.01109
+    featured: true
+
+  - title: "Benchmarking Debiasing Methods for LLM-based Parameter Estimates"
+    authors: "Nicolas Audinet de Pieuchon; Adel Daoud; Connor Thomas Jerzak; Moa Johansson; Richard Johansson"
+    venue: "Proceedings of EMNLP 2025, pp. 19757–19772"
+    year: 2025
+    theme: text
+    url: https://aclanthology.org/2025.emnlp-main.1000/
+    doi: https://doi.org/10.18653/v1/2025.emnlp-main.1000
+
+  - title: "A Scoping Review of Earth Observation and Machine Learning for Causal Inference: Implications for the Geography of Poverty"
+    authors: "Kazuki Sakamoto; Connor T. Jerzak; Adel Daoud"
+    venue: "In: Hall & Wahab (eds.), Geography of Poverty (book chapter)"
+    year: 2025
+    theme: methods
+
+  - title: "Linking datasets on organizations using half a billion open-collaborated records"
+    authors: "Brian Libgober; Connor T. Jerzak"
+    venue: "Political Science Research and Methods, 13(4), 923–942"
+    year: 2025
+    theme: methods
+    doi: https://doi.org/10.1017/psrm.2024.55
 
 2024:
-  - title: "Massive Satellite Imagery Data for Humanitarian Operations: Big Improvements in Automated Building Damage Assessment"
-    authors: "Jerzak, C.T., Johansson, F., Daoud, A."
-    venue: "Journal of the American Statistical Association"
-    year: 2024
-    theme: conflict
-
-  - title: "Using Satellite Imagery to Detect the Built Environment Changes in Uganda"
-    authors: "Daoud, A., Jerzak, C.T., et al."
-    venue: "Scientific Reports"
-    year: 2024
-    theme: sustainability
-
-  - title: "Causal Inference in AI Systems: Opportunities and Challenges"
-    authors: "Jerzak, C.T., Meng, X.L."
-    venue: "Harvard Data Science Review"
+  - title: "Effect Heterogeneity with Earth Observation in Randomized Controlled Trials: Exploring the Role of Data, Model, and Evaluation Metric Choice"
+    authors: "Connor T. Jerzak; Ritwik Vashistha; Adel Daoud"
+    venue: "arXiv Preprint"
     year: 2024
     theme: methods
+    url: https://arxiv.org/abs/2407.11674
+    featured: true
+
+  - title: "Can Large Language Models (or Humans) Disentangle Text?"
+    authors: "Nicolas Audinet de Pieuchon; Adel Daoud; Connor T. Jerzak; Moa Johansson; Richard Johansson"
+    venue: "NLP+CSS 2024, pp. 57–67"
+    year: 2024
+    theme: text
 
 2023:
-  - title: "LinkOrgs: Linking Budget Organizations Across Countries and Years"
-    authors: "Jerzak, C.T."
-    venue: "Political Analysis"
+  - title: "Image-based Treatment Effect Heterogeneity"
+    authors: "Connor T. Jerzak; Fredrik Johansson; Adel Daoud"
+    venue: "Proceedings of the Second Conference on Causal Learning and Reasoning (CLeaR), PMLR 213, pp. 531–552"
+    year: 2023
+    theme: methods
+    url: https://proceedings.mlr.press/v213/jerzak23a.html
+    pdf: https://proceedings.mlr.press/v213/jerzak23a/jerzak23a.pdf
+
+  - title: "CausalImages: An R Package for Causal Inference with Earth Observation, Bio-medical, and Social Science Images"
+    authors: "Connor T. Jerzak; Adel Daoud"
+    venue: "arXiv Preprint"
     year: 2023
     theme: software
-    code: https://github.com/cjerzak/LinkOrgs-software
 
-  - title: "Text-Based Ideal Points for the British Parliament"
-    authors: "Jerzak, C.T."
-    venue: "American Political Science Review"
+  - title: "Integrating Earth Observation Data into Causal Inference: Challenges and Opportunities"
+    authors: "Connor T. Jerzak; Fredrik Johansson; Adel Daoud"
+    venue: "arXiv Preprint"
+    year: 2023
+    theme: methods
+
+  - title: "Degrees of Randomness in Rerandomization Procedures"
+    authors: "Connor T. Jerzak; Rebecca Goldstein"
+    venue: "arXiv Preprint"
+    year: 2023
+    theme: methods
+
+  - title: "An Improved Method of Automated Nonparametric Content Analysis for Social Science"
+    authors: "Connor T. Jerzak; Gary King; Anton Strezhnev"
+    venue: "Political Analysis, 31(1), 42–58"
     year: 2023
     theme: text
-
-  - title: "Deep Learning for Poverty Estimation from Satellite Imagery"
-    authors: "Daoud, A., Jerzak, C.T."
-    venue: "Proceedings of the IEEE"
-    year: 2023
-    theme: poverty
 
 2022:
-  - title: "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale Applied to Poverty Mapping"
-    authors: "Daoud, A., Jerzak, C.T., et al."
-    venue: "NeurIPS Workshop on Machine Learning for the Developing World"
+  - title: "Conceptualizing Treatment Leakage in Text-based Causal Inference"
+    authors: "Adel Daoud; Connor T. Jerzak; Richard Johansson"
+    venue: "NAACL 2022, pp. 5638–5645"
     year: 2022
-    theme: poverty
-
-  - title: "ContractorSight: A Software Package for Estimating Government Contractor Performance"
-    authors: "Jerzak, C.T."
-    venue: "Journal of Open Source Software"
-    year: 2022
-    theme: software
-    code: https://github.com/cjerzak/contractorsight-software
-
-  - title: "Estimating Subnational Conflict Patterns Using Satellite Imagery"
-    authors: "Jerzak, C.T., Daoud, A."
-    venue: "Political Science Research and Methods"
-    year: 2022
-    theme: conflict
-
-2021:
-  - title: "Essays on Causal Inference in Political Science"
-    authors: "Jerzak, C.T."
-    venue: "PhD Dissertation, Harvard University"
-    year: 2021
-    theme: methods
-
-  - title: "Integrating Machine Learning into Sociological Research"
-    authors: "Daoud, A., Jerzak, C.T."
-    venue: "Sociological Methods & Research"
-    year: 2021
-    theme: methods
-
-2020:
-  - title: "Quantifying Social Media Influence on COVID-19 Behavior"
-    authors: "Daoud, A., Jerzak, C.T., et al."
-    venue: "PLOS ONE"
-    year: 2020
-    theme: methods
-
-  - title: "Climate Shocks and Conflict in Africa: Replication and Extensions"
-    authors: "Jerzak, C.T."
-    venue: "Journal of Peace Research"
-    year: 2020
-    theme: conflict
-
-2019:
-  - title: "Transfer Learning for Estimating Poverty from Satellite Data"
-    authors: "Daoud, A., Jerzak, C.T."
-    venue: "Proceedings of the IEEE International Conference on Data Mining"
-    year: 2019
-    theme: poverty
-
-  - title: "Estimating Heterogeneous Treatment Effects from Text"
-    authors: "Jerzak, C.T."
-    venue: "Working Paper"
-    year: 2019
     theme: text
+    doi: https://doi.org/10.18653/v1/2022.naacl-main.413
 
-2018:
-  - title: "Combining Satellite Imagery and Survey Data to Study Development Outcomes"
-    authors: "Daoud, A., Jerzak, C.T."
-    venue: "World Bank Economic Review"
-    year: 2018
-    theme: poverty
-
-  - title: "Automation and the Future of Work: New Evidence from Administrative Data"
-    authors: "Jerzak, C.T., et al."
-    venue: "American Economic Review Papers & Proceedings"
-    year: 2018
-    theme: methods
-
-2017:
-  - title: "Using Night Lights to Proxy for Economic Activity in Fragile States"
-    authors: "Daoud, A., Jerzak, C.T."
-    venue: "Journal of Development Economics"
-    year: 2017
-    theme: poverty
-
-2016:
-  - title: "Methodological Challenges in Combining Multiple Data Sources"
-    authors: "Meng, X.L., Jerzak, C.T."
-    venue: "Statistical Science"
-    year: 2016
-    theme: methods
-
-2015:
-  - title: "Structural Adjustment Programs and Poverty: A Critical Review"
-    authors: "Daoud, A."
-    venue: "World Development"
-    year: 2015
-    theme: poverty
-
-2014:
-  - title: "Causal Inference with Observational Data: Lessons from Economics"
-    authors: "Meng, X.L."
-    venue: "Annual Review of Statistics and Its Application"
-    year: 2014
-    theme: methods
+2021: []
+2020: []
+2019: []
+2018: []
+2017: []
+2016: []
+2015: []
+2014: []
