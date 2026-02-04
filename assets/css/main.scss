@@ -19,6 +19,11 @@
 // Components
 @import "components";
 
+// CSS custom properties that get updated via JS
+:root {
+  --site-header-height: 72px;
+}
+
 // ===========================================
 // Header
 // ===========================================
@@ -32,6 +37,33 @@
   border-bottom: 1px solid rgba($color-black, 0.08);
   box-shadow: 0 1px 0 rgba($color-black, 0.04);
   z-index: 100;
+}
+
+.site-notice {
+  background: linear-gradient(
+    90deg,
+    rgba($color-accent, 0.08),
+    rgba($color-accent-2, 0.06),
+    rgba($color-accent, 0.08)
+  );
+  border-bottom: 1px solid rgba($color-black, 0.08);
+}
+
+.site-notice-text {
+  margin: 0;
+  padding: 10px 0;
+  font-size: $font-size-small;
+  color: $color-gray-600;
+  text-align: center;
+
+  a {
+    color: $color-black;
+    font-weight: $font-weight-medium;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
 }
 
 .nav {
@@ -111,7 +143,7 @@
 
   .nav-menu {
     position: fixed;
-    top: 72px;
+    top: var(--site-header-height, 72px);
     left: 0;
     right: 0;
     bottom: 0;

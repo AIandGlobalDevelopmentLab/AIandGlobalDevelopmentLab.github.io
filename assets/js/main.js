@@ -6,6 +6,27 @@
 (function() {
   'use strict';
 
+  // Keep CSS var in sync with sticky header height
+  function initHeaderHeightVar() {
+    const header = document.querySelector('.site-header');
+    if (!header) return;
+
+    function setHeaderHeightVar() {
+      document.documentElement.style.setProperty('--site-header-height', header.offsetHeight + 'px');
+    }
+
+    let resizeRaf = null;
+    window.addEventListener('resize', function() {
+      if (resizeRaf) cancelAnimationFrame(resizeRaf);
+      resizeRaf = requestAnimationFrame(function() {
+        resizeRaf = null;
+        setHeaderHeightVar();
+      });
+    });
+
+    setHeaderHeightVar();
+  }
+
   // Mobile Navigation Toggle
   function initMobileNav() {
     const toggle = document.querySelector('.nav-toggle');
@@ -158,6 +179,7 @@
 
   // Initialize on DOM ready
   document.addEventListener('DOMContentLoaded', function() {
+    initHeaderHeightVar();
     initMobileNav();
     initPublicationFilters();
     initAccordion();

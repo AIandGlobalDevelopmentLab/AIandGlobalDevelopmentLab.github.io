@@ -7,7 +7,10 @@ description: Visual showcase of research outputs from the AI & Global Developmen
 <div class="page-header">
   <div class="container">
     <h1>Gallery</h1>
-    <p class="page-description">Satellite imagery, data visualizations, and research outputs from our work on global development.</p>
+    <p class="page-description">
+      Satellite imagery, data visualizations, and research outputs from our work on global development.
+      For interactive visualizations, visit <a href="{{ site.main_site.links.visualizations }}" target="_blank" rel="noopener">{{ site.main_site.name }}/visualizations</a>.
+    </p>
   </div>
 </div>
 

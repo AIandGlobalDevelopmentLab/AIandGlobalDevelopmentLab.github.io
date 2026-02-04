@@ -1,0 +1,5 @@
+---
+layout: null
+permalink: /api/team.json
+---
+{{ site.data.team | jsonify }}

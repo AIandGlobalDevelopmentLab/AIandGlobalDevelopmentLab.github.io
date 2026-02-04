@@ -1,4 +1,7 @@
 main:
+  - title: Main Site
+    url: https://aidevlab.org
+    external: true
   - title: Research
     url: /research/
   - title: Team

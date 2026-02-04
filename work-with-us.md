@@ -11,7 +11,9 @@ We are always looking for motivated researchers who want to work on problems tha
 
 ## Current Openings
 
-Check back for specific openings, or reach out if you're interested in joining the lab.
+Current openings are posted on our main site: [{{ site.main_site.name }}/positions]({{ site.main_site.links.positions }}).
+
+If nothing is listed, reach out if you're interested in joining the lab.
 
 ---
 

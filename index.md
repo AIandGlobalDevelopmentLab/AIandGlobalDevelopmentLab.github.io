@@ -11,6 +11,7 @@ title: Home
       <div class="btn-group btn-group-center">
         <a href="{{ '/research/' | relative_url }}" class="btn btn-primary">Explore Research</a>
         <a href="{{ '/work-with-us/' | relative_url }}" class="btn btn-secondary">Join Us</a>
+        <a href="{{ site.main_site.url }}" class="btn btn-ghost" target="_blank" rel="noopener">Main Site</a>
       </div>
     </div>
   </div>
@@ -70,6 +71,55 @@ title: Home
     </div>
     <div class="mt-6 text-center">
       <a href="{{ '/research/' | relative_url }}" class="link-arrow">View all publications</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title text-center">More on aidevlab.org</h2>
+    <p class="text-center text-muted">Our main lab hub hosts datasets, rankings, visualizations, and more.</p>
+
+    <div class="grid grid-3 mt-6">
+      <a class="card card-link" href="{{ site.main_site.links.research }}" target="_blank" rel="noopener">
+        <h3 class="card-title">Research Archive</h3>
+        <p class="card-description">Full project pages and BibTeX downloads.</p>
+        <span class="link-arrow mt-3">Explore</span>
+      </a>
+
+      <a class="card card-link" href="{{ site.main_site.links.data }}" target="_blank" rel="noopener">
+        <h3 class="card-title">Data</h3>
+        <p class="card-description">Datasets, access notes, and documentation.</p>
+        <span class="link-arrow mt-3">Explore</span>
+      </a>
+
+      <a class="card card-link" href="{{ site.main_site.links.code }}" target="_blank" rel="noopener">
+        <h3 class="card-title">Code</h3>
+        <p class="card-description">Software, tools, and repositories.</p>
+        <span class="link-arrow mt-3">Explore</span>
+      </a>
+
+      <a class="card card-link" href="{{ site.main_site.links.rankings }}" target="_blank" rel="noopener">
+        <h3 class="card-title">Rankings</h3>
+        <p class="card-description">Indices and rankings built from EO + surveys.</p>
+        <span class="link-arrow mt-3">Explore</span>
+      </a>
+
+      <a class="card card-link" href="{{ site.main_site.links.visualizations }}" target="_blank" rel="noopener">
+        <h3 class="card-title">Visualizations</h3>
+        <p class="card-description">Interactive maps and figures.</p>
+        <span class="link-arrow mt-3">Explore</span>
+      </a>
+
+      <a class="card card-link" href="{{ site.main_site.links.positions }}" target="_blank" rel="noopener">
+        <h3 class="card-title">Positions</h3>
+        <p class="card-description">Openings and opportunities to work with us.</p>
+        <span class="link-arrow mt-3">Explore</span>
+      </a>
+    </div>
+
+    <div class="mt-6 text-center">
+      <a class="link-arrow" href="{{ site.main_site.links.videos }}" target="_blank" rel="noopener">Watch lab talks</a>
     </div>
   </div>
 </section>

@@ -7,7 +7,10 @@ description: Publications from the AI & Global Development Lab spanning poverty 
 <div class="page-header page-header-left">
   <div class="container">
     <h1>Research</h1>
-    <p class="page-description">Our work spans poverty mapping, conflict analysis, sustainability measurement, and causal inference methodology. All publications are organized by year.</p>
+    <p class="page-description">
+      Our work spans poverty mapping, conflict analysis, sustainability measurement, and causal inference methodology. All publications are organized by year.
+      For full project pages and BibTeX downloads, visit <a href="{{ site.main_site.links.research }}" target="_blank" rel="noopener">{{ site.main_site.name }}/research</a>.
+    </p>
   </div>
 </div>
 

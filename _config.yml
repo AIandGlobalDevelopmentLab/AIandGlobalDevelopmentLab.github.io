@@ -6,6 +6,19 @@ description: >-
 url: "https://aiandglobaldevelopmentlab.github.io"
 baseurl: ""
 
+# Main lab hub (WordPress)
+main_site:
+  url: "https://aidevlab.org"
+  name: "aidevlab.org"
+  links:
+    research: "https://aidevlab.org/research/"
+    data: "https://aidevlab.org/data/"
+    code: "https://aidevlab.org/code/"
+    rankings: "https://aidevlab.org/rankings/"
+    positions: "https://aidevlab.org/positions/"
+    visualizations: "https://aidevlab.org/visualizations/"
+    videos: "https://aidevlab.org/videos/"
+
 # Build settings
 markdown: kramdown
 highlighter: rouge

@@ -1,0 +1,5 @@
+---
+layout: null
+permalink: /api/resources.json
+---
+{{ site.data.resources | jsonify }}
