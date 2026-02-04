@@ -16,8 +16,7 @@ description: Visual showcase of research outputs from the AI & Global Developmen
 
 <section class="section">
   <div class="container">
-    <h2 class="section-title animate-on-scroll">Figure Batteries</h2>
-    <p class="text-muted animate-on-scroll">Dense figure arrays grouped by paper. Click any panel to zoom.</p>
+    <p class="text-muted animate-on-scroll">Explore figure batteries grouped by paper. Use the index to jump to a study, click a title to open the paper, and click any panel to view it full-size.</p>
 
     {% assign batteries = site.data.gallery_batteries %}
 
@@ -34,7 +33,9 @@ description: Visual showcase of research outputs from the AI & Global Developmen
       {% for battery in batteries %}
         <article class="figure-battery card card-glass animate-on-scroll" id="{{ battery.id }}">
           <header class="figure-battery__header">
-            <h3 class="figure-battery__title">{{ battery.title }}</h3>
+            <h3 class="figure-battery__title">
+              <a href="{{ battery.href }}" target="_blank" rel="noopener">{{ battery.title }}</a>
+            </h3>
             <a class="figure-battery__paper link-arrow" href="{{ battery.href }}" target="_blank" rel="noopener">Paper</a>
           </header>
 

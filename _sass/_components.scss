@@ -606,6 +606,14 @@ button.tag {
   text-transform: uppercase;
 }
 
+.figure-battery__title a {
+  color: inherit;
+}
+
+.figure-battery__title a:hover {
+  color: $color-accent-hover;
+}
+
 .figure-battery__paper {
   font-size: $font-size-small;
 }
