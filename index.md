@@ -40,6 +40,56 @@ title: Home
   </div>
 </section>
 
+<section class="section section-gray case-studies-section">
+  <div class="container">
+    <h2 class="section-title text-center animate-on-scroll case-studies-title">Visual Case Studies</h2>
+    <p class="text-center text-muted animate-on-scroll">Figure-first summaries from our papers. Click any tile to zoom.</p>
+
+    {% assign case_studies = site.data.gallery_batteries %}
+
+    <div class="case-studies-grid mt-6 animate-stagger">
+      {% for battery in case_studies %}
+        {% assign lead_panel = battery.panels | first %}
+        <article class="case-study card card-glass animate-on-scroll">
+          <header class="case-study__header">
+            <h3 class="case-study__title">{{ battery.title }}</h3>
+            <div class="case-study__links">
+              <a class="tag" href="{{ battery.href }}" target="_blank" rel="noopener">Paper</a>
+              <a class="tag" href="{{ '/gallery/' | relative_url }}#{{ battery.id }}">Gallery</a>
+            </div>
+          </header>
+
+          {% if lead_panel and lead_panel.alt %}
+            <p class="case-study__caption">{{ lead_panel.alt | truncate: 160 }}</p>
+          {% endif %}
+
+          <div class="case-study__grid" aria-label="Case study panels: {{ battery.title }}">
+            {% for panel in battery.panels | slice: 0, 4 %}
+              <button class="figure-tile" type="button" data-lightbox aria-label="Open full-size image: {{ battery.title }} — {{ panel.label }}">
+                <picture class="figure-tile__media">
+                  {% if panel.dark %}
+                    <source srcset="{{ panel.dark | relative_url }}" media="(prefers-color-scheme: dark)">
+                  {% endif %}
+                  <img
+                    src="{{ panel.light | relative_url }}"
+                    alt="{{ panel.alt }}"
+                    class="figure-tile__img{% if panel.invert_dark %} figure-tile__img--invert-dark{% endif %}"
+                    loading="lazy" />
+                </picture>
+                <span class="figure-tile__label">{{ panel.label }}</span>
+              </button>
+            {% endfor %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+
+    <div class="mt-6 text-center animate-on-scroll">
+      <a href="{{ '/gallery/' | relative_url }}" class="link-arrow">Browse all figure batteries</a>
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container">
     <h2 class="section-title animate-on-scroll">Lab Sites</h2>

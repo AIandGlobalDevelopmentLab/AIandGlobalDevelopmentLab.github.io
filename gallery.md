@@ -116,9 +116,3 @@ description: Visual showcase of research outputs from the AI & Global Developmen
     <p class="animate-on-scroll">Images from our research are available for academic and educational use with attribution. For high-resolution versions or media inquiries, please <a href="{{ '/contact/' | relative_url }}">contact us</a>.</p>
   </div>
 </section>
-
-<!-- Lightbox -->
-<div class="lightbox" id="lightbox">
-  <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
-  <img src="" alt="">
-</div>

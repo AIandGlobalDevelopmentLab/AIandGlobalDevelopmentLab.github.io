@@ -677,6 +677,61 @@ button.tag {
   pointer-events: none;
 }
 
+// Visual case studies (Home)
+.case-studies-title {
+  display: inline-block;
+  padding: 12px 18px;
+  border: 1px solid var(--c-border);
+  background: rgba(var(--c-surface-rgb), 0.72);
+  box-shadow: $shadow-sm;
+}
+
+.case-studies-grid {
+  display: grid;
+  gap: $space-4;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  @media (max-width: $breakpoint-lg) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.case-study__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: $space-2;
+  margin-bottom: $space-2;
+}
+
+.case-study__title {
+  margin: 0;
+  font-family: $font-mono;
+  font-size: $font-size-h4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.case-study__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-1;
+  justify-content: flex-end;
+}
+
+.case-study__caption {
+  margin: 0 0 $space-3;
+  color: $color-gray-600;
+  font-size: $font-size-small;
+  line-height: $line-height-relaxed;
+}
+
+.case-study__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+}
+
 // Lightbox
 .lightbox {
   position: fixed;
