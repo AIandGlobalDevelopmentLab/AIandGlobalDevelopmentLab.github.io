@@ -1,0 +1,126 @@
+- id: one-map-many-trials
+  title: A One Map, Many Trials Paradigm
+  href: https://arxiv.org/abs/2508.01341
+  panels:
+    - label: Figure
+      alt: A One Map, Many Trials Paradigm
+      light: /assets/images/figures/one-map-many-trials_light.webp
+      dark: /assets/images/figures/one-map-many-trials_dark.webp
+
+- id: cv-wb
+  title: Chinese vs World Bank Development Projects
+  href: https://arxiv.org/abs/2509.25648
+  panels:
+    - label: Panel 1
+      alt: Chinese vs World Bank Development Projects visual abstract panel 1
+      light: /assets/images/figures/cv-wb-china1_light.png
+      dark: /assets/images/figures/cv-wb-china1_dark.png
+    - label: Panel 2
+      alt: Chinese vs World Bank Development Projects visual abstract panel 2
+      light: /assets/images/figures/cv-wb-china2_light.png
+      dark: /assets/images/figures/cv-wb-china2_dark.png
+    - label: Panel 3
+      alt: Chinese vs World Bank Development Projects visual abstract panel 3
+      light: /assets/images/figures/cv-wb-china3_light.png
+      dark: /assets/images/figures/cv-wb-china3_dark.png
+    - label: Panel 4
+      alt: Chinese vs World Bank Development Projects visual abstract panel 4
+      light: /assets/images/figures/cv-wb-china4_light.png
+      dark: /assets/images/figures/cv-wb-china4_dark.png
+    - label: Panel 5
+      alt: Chinese vs World Bank Development Projects visual abstract panel 5
+      light: /assets/images/figures/cv-wb-china5_light.png
+      dark: /assets/images/figures/cv-wb-china5_dark.png
+    - label: Panel 6
+      alt: Chinese vs World Bank Development Projects visual abstract panel 6
+      light: /assets/images/figures/cv-wb-china6_light.png
+      dark: /assets/images/figures/cv-wb-china6_dark.png
+
+- id: multiscale
+  title: Multiscale satellite representation
+  href: https://arxiv.org/abs/2411.02134
+  panels:
+    - label: Figure 1
+      alt: Multiscale satellite representation
+      light: /assets/images/figures/multiscale_1_light.webp
+      dark: /assets/images/figures/multiscale_1_dark.webp
+    - label: Figure 2
+      alt: Oracle vs single-/multi-scale diagram
+      light: /assets/images/figures/multiscale_2_light.webp
+      dark: /assets/images/figures/multiscale_2_dark.webp
+    - label: Figure 3
+      alt: Uganda heatmap
+      light: /assets/images/figures/multiscale_3_light.webp
+      dark: /assets/images/figures/multiscale_3_dark.webp
+    - label: Figure 4
+      alt: RATE ratio differences table
+      light: /assets/images/figures/multiscale_4_light.webp
+      dark: /assets/images/figures/multiscale_4_dark.webp
+
+- id: image-seq-heterogeneity
+  title: Image sequence heterogeneity
+  href: https://arxiv.org/abs/2407.11674
+  panels:
+    - label: Figure 1
+      alt: Research visualization 1
+      light: /assets/images/figures/image-seq-heterogeneity_1_light.webp
+      dark: /assets/images/figures/image-seq-heterogeneity_1_dark.webp
+    - label: Figure 2
+      alt: Research visualization 2
+      light: /assets/images/figures/image-seq-heterogeneity_2_light.webp
+      dark: /assets/images/figures/image-seq-heterogeneity_2_dark.webp
+    - label: Figure 3
+      alt: Research visualization 3
+      light: /assets/images/figures/image-seq-heterogeneity_3_light.webp
+      dark: /assets/images/figures/image-seq-heterogeneity_3_dark.webp
+    - label: Figure 4
+      alt: Research visualization 4
+      light: /assets/images/figures/image-seq-heterogeneity_4_light.webp
+      dark: /assets/images/figures/image-seq-heterogeneity_4_dark.webp
+
+- id: eoc
+  title: Earth Observation Confounding (EOC)
+  href: https://arxiv.org/pdf/2301.12985.pdf
+  panels:
+    - label: Figure 1
+      alt: Comparison table of tabular, text, network, and earth observation data streams
+      light: /assets/images/figures/eoc_1_light.webp
+      dark: /assets/images/figures/eoc_1_dark.webp
+    - label: Figure 2
+      alt: Directed acyclic graphs illustrating image-based confounding
+      light: /assets/images/figures/eoc_2_light.webp
+      dark: /assets/images/figures/eoc_2_dark.webp
+    - label: Figure 3
+      alt: Maps showing Nigeria treatment and control sites
+      light: /assets/images/figures/eoc_3_light.webp
+      dark: /assets/images/figures/eoc_3_dark.webp
+
+- id: eo-causal-inference
+  title: Earth observation + causal inference
+  href: https://arxiv.org/pdf/2406.02584
+  panels:
+    - label: Composite
+      alt: Composite illustration of integrating earth observation into causal inference
+      light: /assets/images/figures/planet_1_light.webp
+      dark: /assets/images/figures/planet_1_dark.webp
+    - label: Workflow
+      alt: Earth-observation workflow diagram
+      light: /assets/images/figures/eo-workflow.png
+      invert_dark: true
+
+- id: image-based-treatment-heterogeneity
+  title: Image-based treatment heterogeneity
+  href: https://proceedings.mlr.press/v213/jerzak23a/jerzak23a.pdf
+  panels:
+    - label: Figure 1
+      alt: Research visualization 1
+      light: /assets/images/figures/image-based-treatment-heterogeneity_1_light.webp
+      dark: /assets/images/figures/image-based-treatment-heterogeneity_1_dark.webp
+    - label: Figure 2
+      alt: Research visualization 2
+      light: /assets/images/figures/image-based-treatment-heterogeneity_2_light.webp
+      dark: /assets/images/figures/image-based-treatment-heterogeneity_2_dark.webp
+    - label: Figure 3
+      alt: Research visualization 3
+      light: /assets/images/figures/image-based-treatment-heterogeneity_3_light.webp
+      dark: /assets/images/figures/image-based-treatment-heterogeneity_3_dark.webp

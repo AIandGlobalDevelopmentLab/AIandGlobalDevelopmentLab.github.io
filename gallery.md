@@ -16,37 +16,47 @@ description: Visual showcase of research outputs from the AI & Global Developmen
 
 <section class="section">
   <div class="container">
-    <h2 class="section-title animate-on-scroll">Research Imagery</h2>
-    <div class="gallery-grid animate-stagger">
-      <div class="gallery-item animate-on-scroll">
-        <div class="media-placeholder">Poverty Map<br>Africa</div>
-        <div class="gallery-caption">High-resolution poverty estimates for sub-Saharan Africa</div>
-      </div>
+    <h2 class="section-title animate-on-scroll">Figure Batteries</h2>
+    <p class="text-muted animate-on-scroll">Dense figure arrays grouped by paper. Click any panel to zoom.</p>
 
-      <div class="gallery-item animate-on-scroll">
-        <div class="media-placeholder">Satellite<br>Imagery</div>
-        <div class="gallery-caption">Satellite imagery used for building damage assessment</div>
-      </div>
+    {% assign batteries = site.data.gallery_batteries %}
 
-      <div class="gallery-item animate-on-scroll">
-        <div class="media-placeholder">Causal<br>Inference</div>
-        <div class="gallery-caption">Causal inference framework visualization</div>
+    <div class="battery-index card card-glass animate-on-scroll" aria-label="Figure battery index">
+      <p class="battery-index__label">Index</p>
+      <div class="battery-index__links">
+        {% for battery in batteries %}
+          <a class="tag" href="#{{ battery.id }}">{{ battery.title }}</a>
+        {% endfor %}
       </div>
+    </div>
 
-      <div class="gallery-item animate-on-scroll">
-        <div class="media-placeholder">Night<br>Lights</div>
-        <div class="gallery-caption">Night lights data showing economic activity patterns</div>
-      </div>
+    <div class="figure-batteries mt-6">
+      {% for battery in batteries %}
+        <article class="figure-battery card card-glass animate-on-scroll" id="{{ battery.id }}">
+          <header class="figure-battery__header">
+            <h3 class="figure-battery__title">{{ battery.title }}</h3>
+            <a class="figure-battery__paper link-arrow" href="{{ battery.href }}" target="_blank" rel="noopener">Paper</a>
+          </header>
 
-      <div class="gallery-item animate-on-scroll">
-        <div class="media-placeholder">Building<br>Detection</div>
-        <div class="gallery-caption">Automated building detection and damage classification</div>
-      </div>
-
-      <div class="gallery-item animate-on-scroll">
-        <div class="media-placeholder">Time<br>Series</div>
-        <div class="gallery-caption">Temporal analysis of environmental change</div>
-      </div>
+          <div class="figure-battery__grid" aria-label="Panels for {{ battery.title }}">
+            {% for panel in battery.panels %}
+              <button class="figure-tile" type="button" data-lightbox aria-label="Open full-size image: {{ battery.title }} — {{ panel.label }}">
+                <picture class="figure-tile__media">
+                  {% if panel.dark %}
+                    <source srcset="{{ panel.dark | relative_url }}" media="(prefers-color-scheme: dark)">
+                  {% endif %}
+                  <img
+                    src="{{ panel.light | relative_url }}"
+                    alt="{{ panel.alt }}"
+                    class="figure-tile__img{% if panel.invert_dark %} figure-tile__img--invert-dark{% endif %}"
+                    loading="lazy" />
+                </picture>
+                <span class="figure-tile__label">{{ panel.label }}</span>
+              </button>
+            {% endfor %}
+          </div>
+        </article>
+      {% endfor %}
     </div>
   </div>
 </section>

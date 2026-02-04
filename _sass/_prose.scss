@@ -41,11 +41,11 @@
     color: $color-accent;
     text-decoration: underline;
     text-decoration-thickness: 1.5px;
-    text-decoration-color: rgba($color-accent, 0.35);
+    text-decoration-color: rgba(var(--c-accent-rgb), 0.35);
     text-underline-offset: 3px;
 
     &:hover {
-      text-decoration-color: rgba($color-accent, 0.75);
+      text-decoration-color: rgba(var(--c-accent-rgb), 0.75);
     }
   }
 
@@ -54,15 +54,15 @@
     height: 1px;
     background: linear-gradient(
       90deg,
-      rgba($color-black, 0),
-      rgba($color-black, 0.16),
-      rgba($color-black, 0)
+      rgba(var(--c-text-rgb), 0),
+      rgba(var(--c-text-rgb), 0.16),
+      rgba(var(--c-text-rgb), 0)
     );
     margin: $space-8 0;
   }
 
   blockquote {
-    border-left: 3px solid rgba($color-black, 0.14);
+    border-left: 3px solid rgba(var(--c-text-rgb), 0.14);
     padding-left: $space-3;
     color: $color-gray-600;
   }

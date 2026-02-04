@@ -120,19 +120,23 @@
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = lightbox ? lightbox.querySelector('img') : null;
     const closeBtn = lightbox ? lightbox.querySelector('.lightbox-close') : null;
-    const galleryItems = document.querySelectorAll('.gallery-item');
+    const triggers = document.querySelectorAll('[data-lightbox], .gallery-item');
 
-    if (!lightbox || galleryItems.length === 0) return;
+    if (!lightbox || triggers.length === 0) return;
 
-    galleryItems.forEach(function(item) {
-      item.addEventListener('click', function() {
+    triggers.forEach(function(trigger) {
+      trigger.addEventListener('click', function() {
         const img = this.querySelector('img');
-        if (img) {
-          lightboxImg.src = img.src;
-          lightboxImg.alt = img.alt;
-          lightbox.classList.add('active');
-          document.body.style.overflow = 'hidden';
-        }
+        if (!img) return;
+
+        // For <picture>, currentSrc resolves the actually-selected asset (e.g., dark-mode variant)
+        const src = img.currentSrc || img.src;
+        if (!src) return;
+
+        lightboxImg.src = src;
+        lightboxImg.alt = img.alt || '';
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
       });
     });
 

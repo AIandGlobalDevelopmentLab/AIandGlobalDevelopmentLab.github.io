@@ -23,14 +23,6 @@
 
 // Sections
 .section {
-  padding: $space-12 0;
-
-  @media (max-width: $breakpoint-md) {
-    padding: $space-8 0;
-  }
-}
-
-.section-sm {
   padding: $space-8 0;
 
   @media (max-width: $breakpoint-md) {
@@ -38,11 +30,19 @@
   }
 }
 
-.section-lg {
-  padding: $space-16 0;
+.section-sm {
+  padding: $space-6 0;
 
   @media (max-width: $breakpoint-md) {
-    padding: $space-10 0;
+    padding: $space-4 0;
+  }
+}
+
+.section-lg {
+  padding: $space-12 0;
+
+  @media (max-width: $breakpoint-md) {
+    padding: $space-8 0;
   }
 }
 
@@ -133,11 +133,11 @@
 .page-header {
   position: relative;
   overflow: hidden;
-  padding: $space-10 0 $space-8;
+  padding: $space-8 0 $space-6;
   text-align: center;
 
   @media (max-width: $breakpoint-md) {
-    padding: $space-6 0 $space-4;
+    padding: $space-5 0 $space-3;
   }
 }
 
@@ -147,8 +147,8 @@
   inset: -220px -220px auto;
   height: 420px;
   background:
-    radial-gradient(600px 280px at 50% 35%, rgba($color-accent, 0.16) 0%, rgba($color-white, 0) 60%),
-    radial-gradient(680px 300px at 20% 40%, rgba($color-accent-2, 0.14) 0%, rgba($color-white, 0) 62%);
+    radial-gradient(600px 280px at 50% 35%, rgba(var(--c-accent-rgb), 0.16) 0%, rgba(var(--c-surface-rgb), 0) 60%),
+    radial-gradient(680px 300px at 20% 40%, rgba(var(--c-accent-2-rgb), 0.14) 0%, rgba(var(--c-surface-rgb), 0) 62%);
   pointer-events: none;
 }
 
@@ -161,9 +161,9 @@
   height: 1px;
   background: linear-gradient(
     90deg,
-    rgba($color-black, 0),
-    rgba($color-black, 0.10),
-    rgba($color-black, 0)
+    rgba(var(--c-text-rgb), 0),
+    rgba(var(--c-text-rgb), 0.10),
+    rgba(var(--c-text-rgb), 0)
   );
   pointer-events: none;
 }
@@ -186,6 +186,6 @@
 // Divider
 .divider {
   height: 1px;
-  background-color: rgba($color-black, 0.10);
+  background-color: rgba(var(--c-text-rgb), 0.10);
   margin: $space-6 0;
 }

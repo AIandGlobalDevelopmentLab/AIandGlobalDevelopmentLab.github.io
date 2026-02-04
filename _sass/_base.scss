@@ -10,6 +10,72 @@
   padding: 0;
 }
 
+:root {
+  /* Let the UA pick correct form controls, scrollbars, etc. */
+  color-scheme: light dark;
+
+  /* Typography */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "Source Code Pro", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+  /* Theme (light) */
+  --c-bg: #f6f7fb;
+  --c-surface: #ffffff;
+  --c-surface-rgb: 255, 255, 255;
+  --c-surface-2: #f6f7fb;
+  --c-surface-2-rgb: 246, 247, 251;
+  --c-text: #0b1220;
+  --c-text-rgb: 11, 18, 32;
+  --c-muted: #475569;
+  --c-faint: #6b7280;
+
+  --c-border: rgba(11, 18, 32, 0.12);
+  --c-border-strong: rgba(11, 18, 32, 0.18);
+
+  --c-accent: #2563eb;
+  --c-accent-rgb: 37, 99, 235;
+  --c-accent-hover: #1d4ed8;
+  --c-accent-2: #06b6d4;
+  --c-accent-2-rgb: 6, 182, 212;
+
+  --shadow-sm: 0 1px 0 rgba(11, 18, 32, 0.06), 0 10px 24px rgba(11, 18, 32, 0.06);
+  --shadow-md: 0 14px 40px rgba(11, 18, 32, 0.12);
+  --shadow-lg: 0 26px 72px rgba(11, 18, 32, 0.18);
+
+  --bg-grid-alpha: 0.035;
+  --bg-glow-alpha: 0.14;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --c-bg: #050711;
+    --c-surface: #0b1220;
+    --c-surface-rgb: 11, 18, 32;
+    --c-surface-2: #0f172a;
+    --c-surface-2-rgb: 15, 23, 42;
+    --c-text: #e5e7eb;
+    --c-text-rgb: 229, 231, 235;
+    --c-muted: #cbd5e1;
+    --c-faint: #94a3b8;
+
+    --c-border: rgba(229, 231, 235, 0.12);
+    --c-border-strong: rgba(229, 231, 235, 0.18);
+
+    --c-accent: #60a5fa;
+    --c-accent-rgb: 96, 165, 250;
+    --c-accent-hover: #93c5fd;
+    --c-accent-2: #22d3ee;
+    --c-accent-2-rgb: 34, 211, 238;
+
+    --shadow-sm: 0 1px 0 rgba(0, 0, 0, 0.35), 0 10px 28px rgba(0, 0, 0, 0.45);
+    --shadow-md: 0 18px 56px rgba(0, 0, 0, 0.55);
+    --shadow-lg: 0 28px 84px rgba(0, 0, 0, 0.68);
+
+    --bg-grid-alpha: 0.05;
+    --bg-glow-alpha: 0.10;
+  }
+}
+
 html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -19,16 +85,18 @@ html {
 }
 
 body {
-  font-family: $font-stack;
+  font-family: var(--font-sans);
   font-size: $font-size-body;
   line-height: $line-height-relaxed;
-  color: $color-black;
-  background-color: $color-white;
+  color: var(--c-text);
+  background-color: var(--c-bg);
   background-image:
-    radial-gradient(1000px 520px at 18% -10%, rgba($color-accent-2, 0.18) 0%, rgba($color-white, 0) 60%),
-    radial-gradient(1100px 560px at 85% -18%, rgba($color-accent, 0.18) 0%, rgba($color-white, 0) 58%),
-    radial-gradient(900px 520px at 55% 0%, rgba($color-accent, 0.06) 0%, rgba($color-white, 0) 72%);
-  background-repeat: no-repeat;
+    radial-gradient(1000px 520px at 18% -10%, rgba(var(--c-accent-2-rgb), var(--bg-glow-alpha)) 0%, rgba(var(--c-surface-rgb), 0) 60%),
+    radial-gradient(1100px 560px at 85% -18%, rgba(var(--c-accent-rgb), var(--bg-glow-alpha)) 0%, rgba(var(--c-surface-rgb), 0) 58%),
+    linear-gradient(to right, rgba(var(--c-text-rgb), var(--bg-grid-alpha)) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(var(--c-text-rgb), var(--bg-grid-alpha)) 1px, transparent 1px);
+  background-size: auto, auto, 32px 32px, 32px 32px;
+  background-position: 0 0, 0 0, 0 0, 0 0;
   text-rendering: optimizeLegibility;
   min-height: 100vh;
   display: flex;
@@ -61,7 +129,7 @@ ul, ol {
 
 // Selection
 ::selection {
-  background-color: rgba($color-accent, 0.2);
+  background-color: rgba(var(--c-accent-rgb), 0.22);
 }
 
 // Focus styles for accessibility
@@ -96,7 +164,7 @@ html:focus-within {
   left: $space-2;
   top: $space-2;
   padding: 10px 14px;
-  background-color: $color-black;
+  background-color: $color-accent;
   color: $color-white;
   border-radius: $radius-md;
   transform: translateY(-160%);
