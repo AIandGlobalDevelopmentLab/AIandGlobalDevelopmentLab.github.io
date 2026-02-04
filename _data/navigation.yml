@@ -3,7 +3,8 @@ main:
     url: https://aidevlab.org
     external: true
   - title: Research
-    url: /research/
+    url: https://aidevlab.org/research/
+    external: true
   - title: Team
     url: /team/
   - title: About

@@ -9,7 +9,7 @@ title: Home
       <h1 class="hero-title">AI + Earth observation to measure what changes lives—and why.</h1>
       <p class="hero-subtitle">We fuse satellite imagery with modern AI to map poverty, conflict, and sustainability from 1984 to today. Then we move beyond prediction to planetary-scale causal inference—identifying what drives change, and what works.</p>
       <div class="btn-group btn-group-center">
-        <a href="{{ '/research/' | relative_url }}" class="btn btn-primary">Explore Research</a>
+        <a href="{{ site.main_site.links.research }}" class="btn btn-primary" target="_blank" rel="noopener">Explore Research</a>
         <a href="{{ '/work-with-us/' | relative_url }}" class="btn btn-secondary">Join Us</a>
         <a href="{{ site.main_site.url }}" class="btn btn-ghost" target="_blank" rel="noopener">Main Site</a>
       </div>
@@ -126,7 +126,7 @@ title: Home
       {% endfor %}
     </div>
     <div class="mt-6 text-center animate-on-scroll">
-      <a href="{{ '/research/' | relative_url }}" class="link-arrow">View all publications</a>
+      <a href="{{ site.main_site.links.research }}" class="link-arrow" target="_blank" rel="noopener">View all publications</a>
     </div>
   </div>
 </section>
