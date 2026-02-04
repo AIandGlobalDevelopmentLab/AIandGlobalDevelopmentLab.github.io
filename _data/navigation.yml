@@ -10,8 +10,12 @@ main:
   - title: About
     url: https://aidevlab.org/sites
     external: true
-  - title: Data & Code
-    url: /data-code/
+  - title: Data
+    url: https://aidevlab.org/data/
+    external: true
+  - title: Code
+    url: https://aidevlab.org/code/
+    external: true
   - title: Work With Us
     url: /work-with-us/
   - title: Causal Inference

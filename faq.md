@@ -50,7 +50,7 @@ description: Frequently asked questions about the AI & Global Development Lab.
         <button class="accordion-header" type="button" aria-expanded="false">Can I use your datasets for my research?</button>
         <div class="accordion-content">
           <div class="accordion-body">
-            Yes, our datasets are available for academic research. Some are openly accessible, while others require a data use agreement. Visit our <a href="{{ '/data-code/' | relative_url }}">Data & Code page</a> for details on each dataset and how to request access.
+            Yes, our datasets are available for academic research. Some are openly accessible, while others require a data use agreement. Visit our <a href="{{ site.main_site.links.data }}" target="_blank" rel="noopener">Data page</a> for details on each dataset and how to request access.
           </div>
         </div>
       </div>
@@ -59,7 +59,7 @@ description: Frequently asked questions about the AI & Global Development Lab.
         <button class="accordion-header" type="button" aria-expanded="false">How do I cite your software?</button>
         <div class="accordion-content">
           <div class="accordion-body">
-            Each software package includes citation information in its README file and documentation. Please cite both the software and the relevant methodological paper. Links to both are provided on the <a href="{{ '/data-code/' | relative_url }}">Data & Code page</a>.
+            Each software package includes citation information in its README file and documentation. Please cite both the software and the relevant methodological paper. Links to both are provided on the <a href="{{ site.main_site.links.code }}" target="_blank" rel="noopener">Code page</a>.
           </div>
         </div>
       </div>
