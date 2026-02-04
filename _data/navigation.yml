@@ -8,7 +8,8 @@ main:
   - title: Team
     url: /team/
   - title: About
-    url: /about/
+    url: https://aidevlab.org/sites
+    external: true
   - title: Data & Code
     url: /data-code/
   - title: Work With Us
