@@ -34,17 +34,112 @@ directors:
     scholar: https://scholar.google.com/citations?user=XXXXXXX
 
 researchers:
-  # Add researchers here as they join
-  # - name: Name
-  #   role: Position
-  #   institution: Institution
-  #   photo: /assets/images/team/lastname.webp
+  - name: Fredrik D. Johansson
+    role: Associate Professor, Machine Learning
+    institution: Chalmers University of Technology
+    bio: PI of the Healthy AI Lab; research on causal inference and decision-making with applications in healthcare.
+    photo: /assets/images/team/johansson.webp
+    website: https://www.fredjo.com
+
+  - name: Devdatt Dubhashi
+    role: Head of Unit, Data Science and AI
+    institution: Chalmers University of Technology
+    bio: Research on randomized algorithms and machine learning for big data.
+    photo: /assets/images/team/dubhashi.webp
+    website: https://www.chalmers.se/en/persons/dubhashi/
+
+  - name: James H. Bailie
+    role: Postdoc – Statistician
+    institution: Chalmers University of Technology
+    bio: Postdoc in Data Science and AI; works on statistical methods for global development.
+    photo: /assets/images/team/bailie.webp
+    website: https://jameshbailie.github.io/
+
+  - name: Mohammad Kakooei
+    role: Postdoctoral Researcher
+    institution: Chalmers University of Technology
+    bio: Research on image processing, machine learning, and remote sensing.
+    website: https://research.chalmers.se/en/person/kakooei
+
+  - name: Satiyabooshan Murugaboopathy
+    role: Researcher
+    institution: Linköping University
+    bio: Institute for Analytical Sociology (IAS).
+    website: https://liu.se/en/employee/satmu24
 
 students:
-  # Add students here
-  # - name: Name
-  #   role: PhD Student
-  #   institution: Institution
+  - name: Markus Pettersson
+    group: PhD
+    role: PhD Student, Data Science and AI (CSE)
+    institution: Chalmers University of Technology
+    bio: "Joint work: Debiasing Machine Learning Predictions for Causal Inference Without Additional Ground Truth Data: One Map, Many Trials in Satellite-Driven Poverty Analysis."
+    photo: /assets/images/team/pettersson.webp
+    website: https://www.chalmers.se/en/persons/markpett/
+    links:
+      - label: Paper
+        url: https://arxiv.org/abs/2508.01341
+      - label: Code
+        url: https://github.com/AIandGlobalDevelopmentLab/unshrink
+      - label: BibTeX
+        url: https://aidevlab.org/wp-content/uploads/2025/08/TweedieBib.txt
+
+  - name: Ritwik Vashistha
+    group: PhD
+    role: PhD Student, Statistics and Data Science
+    institution: UT Austin
+    bio: "Joint work: Effect Heterogeneity with Earth Observation in Randomized Controlled Trials: Exploring the Role of Data, Model, and Evaluation Metric Choice."
+    photo: /assets/images/team/vashistha.webp
+    website: https://ritwikvashistha.github.io/
+    links:
+      - label: Paper
+        url: https://arxiv.org/abs/2407.11674
+
+  - name: Cem Mert Dallı
+    group: Masters
+    role: Master's Student, Applied Data Science (Ongoing)
+    institution: University of Gothenburg
+    photo: /assets/images/team/dalli.webp
+    website: https://cemmertdalli.com/
+
+  - name: Mishu Dhar
+    group: Masters
+    role: Master's Student, Computational Social Science (Ongoing)
+    institution: Linköping University
+
+  - name: Mattias Antar
+    group: Masters
+    role: "Master's Student, Computational Social Science (Defended 2026)"
+    institution: Linköping University
+    bio: "Thesis: Temporal Dynamics of Development Aid in Africa: A Difference-in-Differences Study."
+
+  - name: Cindy Conlin
+    group: Masters
+    role: "Master's Student, Computational Social Science (Defended 2024)"
+    institution: Linköping University
+    bio: "Thesis: Using Machine Learning and Daytime Satellite Imagery to Estimate Aid’s Effect on Wealth: Comparing China and World Bank Programs in Africa."
+
+  - name: Mikael P. Gustafsson
+    group: Masters
+    role: "Master's Student, Computational Social Science (Defended 2024)"
+    institution: Linköping University
+    bio: "Thesis: Estimating Aid Effectiveness in Fragile and Conflict-affected States: Evidence from Satellite-based Inference in Somalia."
+
+  - name: Eric Fan
+    group: Other
+    role: Student
+    institution: ""
+
+  - name: Fucheng Warren Zhu
+    group: Other
+    role: Undergraduate Researcher
+    institution: Harvard University
+    bio: "Joint work: Optimizing Multi-Scale Representations to Detect Effect Heterogeneity Using Earth Observation and Computer Vision."
+    photo: /assets/images/team/zhu.webp
+    website: https://www.warrenzhu.com/
+    github: WarrenZhu050413
+    links:
+      - label: Paper
+        url: https://proceedings.mlr.press/v275/zhu25a.html
 
 alumni:
   # Add alumni here
